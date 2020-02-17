@@ -1,0 +1,288 @@
+@import url('common.css');
+
+html,body{
+    height: 100%;
+}
+
+/*전체*/
+.wrap{
+    width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*헤더*/
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    border-bottom: 1px solid #fff;
+    position: fixed;}
+
+/*로고*/
+header h2{
+    color: #fff;    
+}
+header h2 span{}
+header h2 span img{
+}
+
+/*네비게이션*/
+header ul{
+    padding-left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+}
+header ul li a{
+    color: #fff; 
+    padding-right: 50px;
+    text-decoration: none;
+}
+
+header ul li a:after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #fff;
+    display: block;
+    margin: 0 auto;
+    transition: .10s;
+}
+
+header ul li:hover a:after{
+    width: 100%;
+}
+
+header ul li a:hover{
+    color: #f00;
+    text-decoration: none;
+}
+
+/*버거메뉴*/
+header .burger{
+    width: 60px;
+    height: 60px;
+}
+header .burger span{
+    content:'';
+    width: 40px;
+    height: 1px;
+    background: #fff;
+    display: block;
+    position: absolute;
+}
+
+header .burger span:nth-of-type(1){
+top: 15px; right: 10px;
+}
+header .burger span:nth-of-type(2){
+top: 30px; right: 10px;
+}
+header .burger span:nth-of-type(3){
+top: 45px; right: 10px;
+}
+
+
+/*비주얼*/
+.visual{
+}
+.visual span{}
+.visual span img{
+    width:100%;
+    height: 500px;
+}
+/*본문*/
+/*본문첫번째*/
+section{width: 100%;
+}
+section .article1{
+    width: 70%;
+    height: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+section .article1 > h2{
+    font-weight: bold;
+    padding: 160px 0px 0px 0px;
+}
+section .article1 p{
+    padding: 0px 0px 80px;
+}
+section .article1 div{
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+section .article1 div figure{
+    border: 1px solid #eee;
+    width: 360px;
+    height: 100%;
+}
+
+section .article1 div figure:hover{
+    background: #eee;
+}
+section .article1 div figure a{
+    text-decoration: none;
+}
+section .article1 div figure img:nth-of-type(1){
+    padding: 60px 60px;
+}
+section .article1 div figure a figcaption{}
+section .article1 div figure a figcaption h2{
+    font-weight: bold;
+}
+section .article1 div figure a figcaption p{}
+section .article1 div figure img:nth-of-type(2){}
+
+/*본문두번째*/
+section .article2{
+    width: 100%;
+    height: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section .article2 h2{
+    font-weight: bold;
+    padding: 160px 0px 0px 0px;
+}
+section .article2 p{
+    padding: 0px 0px 80px;
+}
+section .article2 ul{
+    height: 500px;
+    background: #eee;
+    display: flex;
+    align-items: center;
+}
+section .article2 ul li{
+    display: inline-block;
+}
+section .article2 ul li img{
+    width: 100%;
+}
+
+section .article2 ul li img:hover{
+    transform: scale(1.3);
+    transition: .5s
+}
+
+/*본문세번째*/
+section .article3{
+    width: 70%;
+    margin: 230px auto;
+    display: flex;
+    justify-content: space-around;
+}
+section .article3 div{
+}
+section .article3 div h2{
+    padding-left: 30px;
+    font-weight: bold;
+    
+}
+section .article3 div p{
+    padding: 20px 0px;
+    white-space: pre-line;
+}
+section .article3 div a{
+    border: 1px solid #eee;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #333;
+}
+section .article3 img{}
+
+/*본문네번째*/
+section .article4{
+    width: 70%;
+    margin: 230px auto;
+    display: flex;
+    justify-content: space-around;
+}
+section .article4 img{}
+section .article4 div h2{
+    padding-left: 30px;
+    font-weight: bold;
+}
+section .article4 div p{
+    padding: 20px 0px;
+    white-space: pre-line;
+}
+section .article4 div a{
+    border: 1px solid #eee;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+
+/*푸터*/
+footer{
+    width: 100%;
+    height: 10%;
+}
+footer .footertop{
+    height: 80px;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+}
+footer .footertop img{
+    opacity: 0.5;
+    width: 100px;
+    height: 50px;
+    margin: 20px 70px;
+}
+footer .footertop img:nth-of-type(2){
+    height: 100px;
+    margin: 0px;
+}
+footer .footerbottom{
+    height: 200px;
+    background: #626262
+}
+
+/*퀵메뉴*/
+
+aside{
+    position: fixed;
+    left: 0;
+    top: 40%;
+}
+
+aside div{
+    border-radius: 20px;
+    background: #fff;
+    width: 100px;
+    height: 50s0px;
+    border: 1px solid #333;
+}
+
+aside div > img{
+     width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+aside div a{
+    color: #333;
+    margin: 20px;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+aside div a img{
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+
+
+
